@@ -4,16 +4,21 @@ Scriptet kan bruges til at demonstrere hvordan serveren virker, da dette er en k
 """
 
 import socket
-SERVER_IP = "127.0.0.1"
+from time import sleep
+
+SERVER_IP = "127.0.0.1"     # se 'UDP_server_socket.py' for forklaring af de her 3 linjer
 SERVER_PORT = 9999
 BUFFER_SIZE = 1024
 
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-while True:
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)    # IPv4, UDP
+while True:     # kør for evigt (stop processen med ctrl + c i terminalen)
 
-    s.sendto(bytes(str(input('skriv noget her: ')),'utf-8'),(SERVER_IP,SERVER_PORT))
+    message = bytes("very important message",'utf-8')
+    s.sendto(message,(SERVER_IP,SERVER_PORT))   # send besked
     print("Data sent.")
 
-    msg_r, server_addr = s.recvfrom(BUFFER_SIZE)
+    msg_r, server_addr = s.recvfrom(BUFFER_SIZE)    # modtag et svar
 
     print(msg_r.decode(), server_addr)
+
+    sleep(10)   # vent i 10 sekunder før vi gør det igen
