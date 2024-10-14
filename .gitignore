@@ -1,5 +1,6 @@
 # User-defined
 *.docx
+/Eksempel_på_løsning
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
