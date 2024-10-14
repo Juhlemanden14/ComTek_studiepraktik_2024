@@ -31,3 +31,4 @@ while True: # Server uendeligt loop
 
     s.sendto(bytes(ans, encoding='utf-8'), a)
     print("answer sent")
+    
