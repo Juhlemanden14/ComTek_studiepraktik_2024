@@ -6,7 +6,7 @@ const char* ssid = "Dit_Netværks_Navn";        // Skift dette til dit netværks
 const char* password = "Dit_Netværks_Password"; // Skift dette til din WiFi-adgangskode
 
 // IP-adresse og port for serveren
-const char* udpAddress = "192.168.1.100"; // IP-adressen på serveren, du vil sende beskeder til
+const char* udpAddress = "192.168.0.xxx"; // IP-adressen på serveren, du vil sende beskeder til
 const int udpPort = 1234;                 // Porten, som serveren lytter på
 
 WiFiUDP udp;  // Opretter en UDP-forbindelse
