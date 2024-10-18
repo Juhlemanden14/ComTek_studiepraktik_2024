@@ -26,7 +26,7 @@ void setup() {
     Serial.println("Forbinder...");
   }
 
-  // Når WiFi er forbundet, printes WiFi-adressen
+  // Når WiFi er forbundet, printes IP-adressen
   Serial.println("Forbundet til WiFi!");
   Serial.print("ESP32 IP-adresse: ");
   Serial.println(WiFi.localIP());
