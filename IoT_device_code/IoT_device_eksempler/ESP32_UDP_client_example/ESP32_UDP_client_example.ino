@@ -2,12 +2,12 @@
 #include <WiFiUdp.h>
 
 // Dit WiFi-netværks navn (SSID) og adgangskode (password)
-const char* ssid = "Dit_Netværks_Navn";        // Skift dette til dit netværksnavn (SSID)
-const char* password = "Dit_Netværks_Password"; // Skift dette til din WiFi-adgangskode
+const char* ssid = "DIT SSID";        // Skift dette til dit netværksnavn (SSID)
+const char* password = "DIN KODE";    // Skift dette til din WiFi-adgangskode
 
 // IP-adresse og port for serveren
 const char* udpAddress = "192.168.0.xxx"; // IP-adressen på serveren, du vil sende beskeder til
-const int udpPort = 1234;                 // Porten, som serveren lytter på
+const int udpPort = 12000;                 // Porten, som serveren lytter på
 
 WiFiUDP udp;  // Opretter en UDP-forbindelse
 

@@ -9,8 +9,8 @@ Måden det virker på:
 
 import socket
 
-HOST = '127.0.0.1'           # Symbolsk navn for enhver tilgængelig interface
-PORT = 9999         # Arbitrær, ikke-reserveret port. Bare vælg noget der ikke er 0-5000 ish
+HOST = ''           # Symbolsk navn for enhver tilgængelig interface
+PORT = 12000         # Arbitrær, ikke-reserveret port. Bare vælg noget der ikke er 0-5000 ish
 CONN_COUNTER = 0    # Tæller antallet af forbindelser
 BUFFER_SIZE = 1024  # Receive Buffer størrelse (power of 2)
 

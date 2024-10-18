@@ -3,9 +3,17 @@
 # TO-DO Liste
 - Test eksempelscripts
     - ESP32 IoT Device
+        - ArduinoJSON_example [DONE]
+        - DHT11_example [MISSING]
+        - ESP32_example [DONE]
+        - ESP32_UDP_client_example [DONE]
     - Python server
+        - JSON_eksempel.py [DONE]
+        - UDP_client_socket.py [DONE]
+        - UDP_server_socket.py [DONE]
 
-- Skriv facit eksempel og gem med gitignore
+- test facit eksempel med DHT11 forbundet. Det virker også uden sensor
+
 
 Vigtige punkter for forståelsen
 - renskriv case så den er læsbar for eleverne
