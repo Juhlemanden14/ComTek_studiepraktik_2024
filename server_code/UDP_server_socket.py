@@ -9,6 +9,13 @@ Måden det virker på:
 
 import socket
 
+# Giver jeres locale IP-addresse
+def get_local_ip():
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+        s.connect(('8.8.8.8', 80))
+        local_ip = s.getsockname()[0]
+    return local_ip
+
 HOST = ''           # Symbolsk navn for enhver tilgængelig interface
 PORT = 12000         # Arbitrær, ikke-reserveret port. Bare vælg noget der ikke er 0-5000 ish
 CONN_COUNTER = 0    # Tæller antallet af forbindelser
@@ -17,7 +24,7 @@ BUFFER_SIZE = 1024  # Receive Buffer størrelse (power of 2)
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # IPv4, UDP
 s.bind((HOST, PORT))    # Bind sockect til adressen
 print('UDP server running...')
-print(f'Listening for incoming connections in port '+str(PORT))
+print(f'Listening for incoming connections at host ' + get_local_ip() + " and port " + str(PORT))
 
 while True: # Server uendeligt loop
     CONN_COUNTER = CONN_COUNTER + 1
