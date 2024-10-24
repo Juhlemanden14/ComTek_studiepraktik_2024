@@ -1,6 +1,6 @@
 # User-defined
 *.docx
-/Eksempel_på_løsning/IoT_device
+# /Eksempel_på_løsning/IoT_device
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
