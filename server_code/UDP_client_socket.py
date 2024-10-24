@@ -6,8 +6,8 @@ Scriptet kan bruges til at demonstrere hvordan serveren virker, da dette er en k
 import socket
 from time import sleep
 
-SERVER_IP = "192.168.0.xxx"     # se 'UDP_server_socket.py' for forklaring af de her 3 linjer
-SERVER_PORT = 12000
+SERVER_IP = "127.0.0.0"     # se 'UDP_server_socket.py' for forklaring af de her 3 linjer
+SERVER_PORT = 13000
 BUFFER_SIZE = 1024
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)    # IPv4, UDP

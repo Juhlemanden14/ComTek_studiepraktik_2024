@@ -14,6 +14,7 @@ my_dict = {
 # print/vis i terminalen
 print("Print af my_dict: ", end="")
 print(my_dict)
+print("Hello, WOrld")
 
 my_json = json.dumps(my_dict)
 
@@ -28,6 +29,6 @@ print(f"my_json type: {type(my_json)}")
 læst_json = json.loads(my_json)
 
 # indeksering i JSON objektet - læs hvad der står ved 'pakke_info' nøglen (key/value pair)
-pakke_info = læst_json["pakke_info"]
+pakke_info = læst_json["payload"]
 print("Print af pakke_info: ", end="")
 print(pakke_info)
